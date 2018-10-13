@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.1.3">
+<drawing>
+<settings>
+<setting alwaysvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<plain>
+<wire x1="2.6416" y1="0.4318" x2="2.6924" y2="0.4318" width="0" layer="20"/>
+<wire x1="2.6924" y1="0.4318" x2="118.8722" y2="0.4318" width="0" layer="20"/>
+<wire x1="118.8722" y1="0.4318" x2="118.8976" y2="9.1594" width="0" layer="20"/>
+<wire x1="118.8976" y1="9.1594" x2="2.6416" y2="9.0832" width="0" layer="20"/>
+<wire x1="2.6416" y1="9.0832" x2="2.6416" y2="0.4318" width="0" layer="20"/>
+<text x="5.4864" y="4.0894" size="1.778" layer="21">https://github.com/nicolai86/ErgoDox-EZ | LED strip | v0.1.0</text>
+</plain>
+<libraries>
+<library name="wirepad" urn="urn:adsk.eagle:library:412">
+<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1,6/0,8" urn="urn:adsk.eagle:footprint:30809/1" library_version="1">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.508" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.762" x2="0.508" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="-0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.762" y2="-0.508" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="1,6/0,8" urn="urn:adsk.eagle:package:30830/1" type="box" library_version="1">
+<description>THROUGH-HOLE PAD</description>
+<packageinstances>
+<packageinstance name="1,6/0,8"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="1655">
+<description>&lt;Intelligent control LED integrated light source, 4-pin SMD&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="WS2812B_1">
+<description>&lt;b&gt;WS2812B_1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-2.45" y="1.65" dx="1.5" dy="0.9" layer="1"/>
+<smd name="2" x="-2.45" y="-1.65" dx="1.5" dy="0.9" layer="1"/>
+<smd name="3" x="2.45" y="-1.65" dx="1.5" dy="0.9" layer="1"/>
+<smd name="4" x="2.45" y="1.65" dx="1.5" dy="0.9" layer="1"/>
+<text x="-0.321" y="-0.073" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.321" y="-0.073" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.254" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.254" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.254" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.254" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.254" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.254" layer="21"/>
+<wire x1="-2.5" y1="0.9" x2="-2.5" y2="-0.9" width="0.254" layer="21"/>
+<wire x1="2.5" y1="0.9" x2="2.5" y2="-0.9" width="0.254" layer="21"/>
+<circle x="-3.685" y="2.34" radius="0.063640625" width="0.254" layer="25"/>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="6mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="0.35mm"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="6.25mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="2"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="*"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="-"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="5V" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" package3d_urn="urn:adsk.eagle:package:30830/1" value="" x="116.967" y="7.1628" smashed="yes" rot="R90">
+<attribute name="NAME" x="116.0018" y="7.747" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="116.367" y="7.1628" size="0.0254" layer="27" rot="R90"/>
+</element>
+<element name="DATA" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" package3d_urn="urn:adsk.eagle:package:30830/1" value="" x="116.967" y="4.7498" smashed="yes" rot="R270">
+<attribute name="NAME" x="111.9124" y="4.2164" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="117.567" y="4.7498" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" package3d_urn="urn:adsk.eagle:package:30830/1" value="" x="116.967" y="2.3368" smashed="yes" rot="R90">
+<attribute name="NAME" x="116.0018" y="2.9718" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="116.367" y="2.3368" size="0.0254" layer="27" rot="R90"/>
+</element>
+<element name="LED1" library="1655" package="WS2812B_1" value="1655" x="112.06475" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="112.06475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="112.06475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="112.06475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="112.06475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="112.06475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="111.97935" y="4.6768" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="112.06475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED10" library="1655" package="WS2812B_1" value="1655" x="45.280925" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="45.280925" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="45.280925" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45.280925" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="45.280925" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="45.280925" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="45.246325" y="4.7022" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="45.280925" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED11" library="1655" package="WS2812B_1" value="1655" x="37.8605" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="37.8605" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="37.8605" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="37.8605" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="37.8605" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="37.8605" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="37.7243" y="4.7022" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="37.8605" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED12" library="1655" package="WS2812B_1" value="1655" x="30.440075" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="30.440075" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="30.440075" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="30.440075" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="30.440075" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="30.440075" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="30.380075" y="4.7276" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="30.440075" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED13" library="1655" package="WS2812B_1" value="1655" x="23.01965" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="23.01965" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="23.01965" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="23.01965" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="23.01965" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="23.01965" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="22.90885" y="4.6768" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="23.01965" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED14" library="1655" package="WS2812B_1" value="1655" x="15.599225" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="15.599225" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="15.599225" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="15.599225" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="15.599225" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="15.599225" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="15.539225" y="4.5752" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="15.599225" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED15" library="1655" package="WS2812B_1" value="1655" x="8.1788" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="8.1788" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="8.1788" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="8.1788" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="8.1788" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="8.1788" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="8.1188" y="4.6006" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="8.1788" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED2" library="1655" package="WS2812B_1" value="1655" x="104.644325" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="104.644325" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="104.644325" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="104.644325" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="104.644325" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="104.644325" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="104.584325" y="4.626" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="104.644325" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED3" library="1655" package="WS2812B_1" value="1655" x="97.2239" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="97.2239" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="97.2239" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97.2239" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="97.2239" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="97.2239" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="97.1639" y="4.5752" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="97.2239" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED4" library="1655" package="WS2812B_1" value="1655" x="89.803475" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="89.803475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="89.803475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="89.803475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="89.803475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="89.803475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="89.718075" y="4.5498" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="89.803475" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED5" library="1655" package="WS2812B_1" value="1655" x="82.38305" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="82.38305" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="82.38305" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="82.38305" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="82.38305" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="82.38305" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="82.32305" y="4.6006" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="82.38305" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED6" library="1655" package="WS2812B_1" value="1655" x="74.962625" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="74.962625" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="74.962625" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="74.962625" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="74.962625" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="74.962625" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="74.928025" y="4.7276" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="74.962625" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED7" library="1655" package="WS2812B_1" value="1655" x="67.5422" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="67.5422" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="67.5422" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="67.5422" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="67.5422" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="67.5422" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="67.533" y="4.6768" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="67.5422" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED8" library="1655" package="WS2812B_1" value="1655" x="60.121775" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="60.121775" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="60.121775" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="60.121775" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="60.121775" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="60.121775" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="60.137975" y="4.6768" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="60.121775" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="LED9" library="1655" package="WS2812B_1" value="1655" x="52.70135" y="4.6736" smashed="yes" rot="MR0">
+<attribute name="ALLIED_NUMBER" value="70928826" x="52.70135" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value="Intelligent control LED integrated light source, 4-pin SMD" x="52.70135" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="HEIGHT" value="mm" x="52.70135" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" x="52.70135" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1655" x="52.70135" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="52.74295" y="4.7022" size="1.27" layer="26" rot="MR0" align="center"/>
+<attribute name="RS_PART_NUMBER" value="" x="52.70135" y="4.6736" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+</elements>
+<signals>
+<signal name="DATA-IN">
+<contactref element="LED1" pad="4"/>
+<contactref element="DATA" pad="1"/>
+<wire x1="111.4044" y1="6.4008" x2="109.728" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="113.0808" y1="4.7244" x2="111.4044" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="116.8908" y1="4.7244" x2="113.0808" y2="4.7244" width="0.1524" layer="16"/>
+<wire x1="109.728" y1="6.4008" x2="109.61475" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="116.8908" y1="4.7244" x2="116.967" y2="4.7498" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="LED1" pad="2"/>
+<contactref element="LED2" pad="4"/>
+<wire x1="105.0036" y1="6.4008" x2="102.2604" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="107.1372" y1="4.2672" x2="105.0036" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="112.3188" y1="4.2672" x2="107.1372" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="113.6904" y1="2.8956" x2="112.3188" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="114.4524" y1="2.8956" x2="113.6904" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="102.2604" y1="6.4008" x2="102.194325" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="114.4524" y1="2.8956" x2="114.51475" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$2">
+<contactref element="LED2" pad="2"/>
+<contactref element="LED3" pad="4"/>
+<wire x1="97.536" y1="6.4008" x2="94.7928" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="99.822" y1="4.1148" x2="97.536" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="105.0036" y1="4.1148" x2="99.822" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="106.0704" y1="3.048" x2="105.0036" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="106.9848" y1="3.048" x2="106.0704" y2="3.048" width="0.1524" layer="16"/>
+<wire x1="94.7928" y1="6.4008" x2="94.7739" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="106.9848" y1="3.048" x2="107.094325" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$3">
+<contactref element="LED3" pad="2"/>
+<contactref element="LED4" pad="4"/>
+<wire x1="90.2208" y1="6.4008" x2="87.4776" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="92.3544" y1="4.2672" x2="90.2208" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="97.536" y1="4.2672" x2="92.3544" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="98.9076" y1="2.8956" x2="97.536" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="99.6696" y1="2.8956" x2="98.9076" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="87.4776" y1="6.4008" x2="87.353475" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="99.6696" y1="2.8956" x2="99.6739" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$4">
+<contactref element="LED4" pad="2"/>
+<contactref element="LED5" pad="4"/>
+<wire x1="81.6864" y1="6.4008" x2="80.01" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="83.82" y1="4.2672" x2="81.6864" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="90.0684" y1="4.2672" x2="83.82" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="91.44" y1="2.8956" x2="90.0684" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="92.202" y1="2.8956" x2="91.44" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="80.01" y1="6.4008" x2="79.93305" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="92.202" y1="2.8956" x2="92.253475" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$5">
+<contactref element="LED5" pad="2"/>
+<contactref element="LED6" pad="4"/>
+<wire x1="75.2856" y1="6.4008" x2="72.5424" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="77.5716" y1="4.1148" x2="75.2856" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="82.7532" y1="4.1148" x2="77.5716" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="83.82" y1="3.048" x2="82.7532" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="84.7344" y1="3.048" x2="83.82" y2="3.048" width="0.1524" layer="16"/>
+<wire x1="72.5424" y1="6.4008" x2="72.512625" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="84.7344" y1="3.048" x2="84.83305" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$6">
+<contactref element="LED6" pad="2"/>
+<contactref element="LED7" pad="4"/>
+<wire x1="66.9036" y1="6.4008" x2="65.2272" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="69.0372" y1="4.2672" x2="66.9036" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="75.2856" y1="4.2672" x2="69.0372" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="76.6572" y1="2.8956" x2="75.2856" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="77.2668" y1="2.8956" x2="76.6572" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="65.2272" y1="6.4008" x2="65.0922" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="77.2668" y1="2.8956" x2="77.412625" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$7">
+<contactref element="LED7" pad="2"/>
+<contactref element="LED8" pad="4"/>
+<wire x1="60.5028" y1="6.4008" x2="57.7596" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="62.6364" y1="4.2672" x2="60.5028" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="67.818" y1="4.2672" x2="62.6364" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="69.1896" y1="2.8956" x2="67.818" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="69.9516" y1="2.8956" x2="69.1896" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="57.7596" y1="6.4008" x2="57.671775" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="69.9516" y1="2.8956" x2="69.9922" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$8">
+<contactref element="LED8" pad="2"/>
+<contactref element="LED9" pad="4"/>
+<wire x1="53.0352" y1="6.4008" x2="50.292" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="55.3212" y1="4.1148" x2="53.0352" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="60.5028" y1="4.1148" x2="55.3212" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="61.5696" y1="3.048" x2="60.5028" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="62.484" y1="3.048" x2="61.5696" y2="3.048" width="0.1524" layer="16"/>
+<wire x1="50.292" y1="6.4008" x2="50.25135" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="62.484" y1="3.048" x2="62.571775" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$9">
+<contactref element="LED9" pad="2"/>
+<contactref element="LED10" pad="4"/>
+<wire x1="45.5676" y1="6.4008" x2="42.9768" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="47.7012" y1="4.2672" x2="45.5676" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="53.0352" y1="4.2672" x2="47.7012" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="54.4068" y1="2.8956" x2="53.0352" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="55.0164" y1="2.8956" x2="54.4068" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="42.9768" y1="6.4008" x2="42.830925" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="55.0164" y1="2.8956" x2="55.15135" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$10">
+<contactref element="LED10" pad="2"/>
+<contactref element="LED11" pad="4"/>
+<wire x1="38.2524" y1="6.4008" x2="35.5092" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="40.386" y1="4.2672" x2="38.2524" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="45.5676" y1="4.2672" x2="40.386" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="46.9392" y1="2.8956" x2="45.5676" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="47.7012" y1="2.8956" x2="46.9392" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="35.5092" y1="6.4008" x2="35.4105" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="47.7012" y1="2.8956" x2="47.730925" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$11">
+<contactref element="LED11" pad="2"/>
+<contactref element="LED12" pad="4"/>
+<wire x1="30.7848" y1="6.4008" x2="28.0416" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="33.0708" y1="4.1148" x2="30.7848" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="38.2524" y1="4.1148" x2="33.0708" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="39.3192" y1="3.048" x2="38.2524" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="40.2336" y1="3.048" x2="39.3192" y2="3.048" width="0.1524" layer="16"/>
+<wire x1="28.0416" y1="6.4008" x2="27.990075" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="40.2336" y1="3.048" x2="40.3105" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$12">
+<contactref element="LED12" pad="2"/>
+<contactref element="LED13" pad="4"/>
+<wire x1="23.3172" y1="6.4008" x2="20.574" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="25.6032" y1="4.1148" x2="23.3172" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="30.7848" y1="4.1148" x2="25.6032" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="31.8516" y1="3.048" x2="30.7848" y2="4.1148" width="0.1524" layer="16"/>
+<wire x1="32.766" y1="3.048" x2="31.8516" y2="3.048" width="0.1524" layer="16"/>
+<wire x1="20.574" y1="6.4008" x2="20.56965" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="32.766" y1="3.048" x2="32.890075" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$13">
+<contactref element="LED13" pad="2"/>
+<contactref element="LED14" pad="4"/>
+<wire x1="13.1064" y1="6.7056" x2="13.1064" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="12.4968" y1="7.3152" x2="13.1064" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="9.6012" y1="7.3152" x2="12.4968" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="9.2964" y1="7.0104" x2="9.6012" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="9.2964" y1="5.6388" x2="9.2964" y2="7.0104" width="0.1524" layer="16"/>
+<wire x1="10.3632" y1="4.572" x2="9.2964" y2="5.6388" width="0.1524" layer="16"/>
+<wire x1="23.0124" y1="4.572" x2="10.3632" y2="4.572" width="0.1524" layer="16"/>
+<wire x1="24.6888" y1="2.8956" x2="23.0124" y2="4.572" width="0.1524" layer="16"/>
+<wire x1="25.4508" y1="2.8956" x2="24.6888" y2="2.8956" width="0.1524" layer="16"/>
+<wire x1="13.1064" y1="6.4008" x2="13.149225" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="25.4508" y1="2.8956" x2="25.46965" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$14">
+<contactref element="LED14" pad="2"/>
+<contactref element="LED15" pad="4"/>
+<wire x1="8.0772" y1="6.4008" x2="5.7912" y2="6.4008" width="0" layer="19" extent="1-16"/>
+<wire x1="10.2108" y1="4.2672" x2="8.0772" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="15.8496" y1="4.2672" x2="10.2108" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="17.0688" y1="3.048" x2="15.8496" y2="4.2672" width="0.1524" layer="16"/>
+<wire x1="17.9832" y1="3.048" x2="17.0688" y2="3.048" width="0.1524" layer="16"/>
+<wire x1="5.7912" y1="6.4008" x2="5.7288" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="17.9832" y1="3.048" x2="18.049225" y2="3.0236" width="0.1524" layer="16"/>
+</signal>
+<signal name="+5V">
+<contactref element="LED8" pad="1"/>
+<contactref element="LED7" pad="1"/>
+<contactref element="LED6" pad="1"/>
+<contactref element="LED5" pad="1"/>
+<contactref element="LED4" pad="1"/>
+<contactref element="LED3" pad="1"/>
+<contactref element="LED2" pad="1"/>
+<contactref element="LED1" pad="1"/>
+<contactref element="LED15" pad="1"/>
+<contactref element="LED14" pad="1"/>
+<contactref element="LED13" pad="1"/>
+<contactref element="LED12" pad="1"/>
+<contactref element="LED11" pad="1"/>
+<contactref element="LED10" pad="1"/>
+<contactref element="LED9" pad="1"/>
+<contactref element="5V" pad="1"/>
+<wire x1="84.8868" y1="6.7056" x2="84.8868" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="85.4964" y1="7.3152" x2="84.8868" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="90.3732" y1="7.3152" x2="85.4964" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="91.44" y1="6.2484" x2="90.3732" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="92.202" y1="6.2484" x2="91.44" y2="6.2484" width="0.1524" layer="16"/>
+<wire x1="84.8868" y1="6.4008" x2="84.83305" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="92.202" y1="6.2484" x2="92.253475" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="116.1288" y1="6.4008" x2="114.6048" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="116.8908" y1="7.1628" x2="116.1288" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="114.6048" y1="6.4008" x2="114.51475" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="116.8908" y1="7.1628" x2="116.967" y2="7.1628" width="0.1524" layer="16"/>
+<wire x1="99.822" y1="6.858" x2="99.822" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="100.2792" y1="7.3152" x2="99.822" y2="6.858" width="0.1524" layer="16"/>
+<wire x1="105.156" y1="7.3152" x2="100.2792" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="106.0704" y1="6.4008" x2="105.156" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="106.9848" y1="6.4008" x2="106.0704" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="99.822" y1="6.4008" x2="99.6739" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="106.9848" y1="6.4008" x2="107.094325" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="111.8616" y1="6.4008" x2="114.4524" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="110.9472" y1="7.3152" x2="111.8616" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="107.8992" y1="7.3152" x2="110.9472" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="106.9848" y1="6.4008" x2="107.8992" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="114.4524" y1="6.4008" x2="114.51475" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="106.9848" y1="6.4008" x2="107.094325" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="92.3544" y1="6.7056" x2="92.3544" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="92.964" y1="7.3152" x2="92.3544" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="97.6884" y1="7.3152" x2="92.964" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="98.6028" y1="6.4008" x2="97.6884" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="99.6696" y1="6.4008" x2="98.6028" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="92.3544" y1="6.4008" x2="92.253475" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="99.6696" y1="6.4008" x2="99.6739" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="10.668" y1="5.9436" x2="10.668" y2="6.2484" width="0.1524" layer="16"/>
+<wire x1="11.2776" y1="5.334" x2="10.668" y2="5.9436" width="0.1524" layer="16"/>
+<wire x1="16.1544" y1="5.334" x2="11.2776" y2="5.334" width="0.1524" layer="16"/>
+<wire x1="17.0688" y1="6.2484" x2="16.1544" y2="5.334" width="0.1524" layer="16"/>
+<wire x1="17.9832" y1="6.2484" x2="17.0688" y2="6.2484" width="0.1524" layer="16"/>
+<wire x1="10.668" y1="6.2484" x2="10.6288" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="17.9832" y1="6.2484" x2="18.049225" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="25.6032" y1="6.858" x2="25.6032" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="26.0604" y1="7.3152" x2="25.6032" y2="6.858" width="0.1524" layer="16"/>
+<wire x1="30.9372" y1="7.3152" x2="26.0604" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="31.8516" y1="6.4008" x2="30.9372" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="32.766" y1="6.4008" x2="31.8516" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="25.6032" y1="6.4008" x2="25.46965" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="32.766" y1="6.4008" x2="32.890075" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="18.1356" y1="6.7056" x2="18.1356" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="18.7452" y1="7.3152" x2="18.1356" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="23.4696" y1="7.3152" x2="18.7452" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="24.384" y1="6.4008" x2="23.4696" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="25.4508" y1="6.4008" x2="24.384" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="18.1356" y1="6.4008" x2="18.049225" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="25.4508" y1="6.4008" x2="25.46965" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="70.104" y1="6.7056" x2="70.104" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="70.7136" y1="7.3152" x2="70.104" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="75.438" y1="7.3152" x2="70.7136" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="76.3524" y1="6.4008" x2="75.438" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="77.2668" y1="6.4008" x2="76.3524" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="70.104" y1="6.4008" x2="69.9922" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="77.2668" y1="6.4008" x2="77.412625" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="40.386" y1="6.7056" x2="40.386" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="40.9956" y1="7.3152" x2="40.386" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="45.8724" y1="7.3152" x2="40.9956" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="46.9392" y1="6.2484" x2="45.8724" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="47.7012" y1="6.2484" x2="46.9392" y2="6.2484" width="0.1524" layer="16"/>
+<wire x1="40.386" y1="6.4008" x2="40.3105" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="47.7012" y1="6.2484" x2="47.730925" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="55.1688" y1="6.7056" x2="55.1688" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="55.7784" y1="7.3152" x2="55.1688" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="60.6552" y1="7.3152" x2="55.7784" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="61.5696" y1="6.4008" x2="60.6552" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="62.484" y1="6.4008" x2="61.5696" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="55.1688" y1="6.4008" x2="55.15135" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="62.484" y1="6.4008" x2="62.571775" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="47.8536" y1="6.858" x2="47.8536" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="48.3108" y1="7.3152" x2="47.8536" y2="6.858" width="0.1524" layer="16"/>
+<wire x1="53.1876" y1="7.3152" x2="48.3108" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="54.102" y1="6.4008" x2="53.1876" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="55.0164" y1="6.4008" x2="54.102" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="47.8536" y1="6.4008" x2="47.730925" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="55.0164" y1="6.4008" x2="55.15135" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="67.3608" y1="6.4008" x2="69.9516" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="66.4464" y1="7.3152" x2="67.3608" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="63.3984" y1="7.3152" x2="66.4464" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="62.484" y1="6.4008" x2="63.3984" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="69.9516" y1="6.4008" x2="69.9922" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="62.484" y1="6.4008" x2="62.571775" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="32.9184" y1="6.7056" x2="32.9184" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="33.528" y1="7.3152" x2="32.9184" y2="6.7056" width="0.1524" layer="16"/>
+<wire x1="38.4048" y1="7.3152" x2="33.528" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="39.3192" y1="6.4008" x2="38.4048" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="40.2336" y1="6.4008" x2="39.3192" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="32.9184" y1="6.4008" x2="32.890075" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="40.2336" y1="6.4008" x2="40.3105" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="82.1436" y1="6.4008" x2="84.7344" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="81.2292" y1="7.3152" x2="82.1436" y2="6.4008" width="0.1524" layer="16"/>
+<wire x1="78.1812" y1="7.3152" x2="81.2292" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="77.2668" y1="6.4008" x2="78.1812" y2="7.3152" width="0.1524" layer="16"/>
+<wire x1="84.7344" y1="6.4008" x2="84.83305" y2="6.3236" width="0.1524" layer="16"/>
+<wire x1="77.2668" y1="6.4008" x2="77.412625" y2="6.3236" width="0.1524" layer="16"/>
+</signal>
+<signal name="GND">
+<contactref element="LED1" pad="3"/>
+<contactref element="LED2" pad="3"/>
+<contactref element="LED3" pad="3"/>
+<contactref element="LED4" pad="3"/>
+<contactref element="LED5" pad="3"/>
+<contactref element="LED6" pad="3"/>
+<contactref element="LED7" pad="3"/>
+<contactref element="LED8" pad="3"/>
+<contactref element="LED15" pad="3"/>
+<contactref element="LED14" pad="3"/>
+<contactref element="LED13" pad="3"/>
+<contactref element="LED12" pad="3"/>
+<contactref element="LED11" pad="3"/>
+<contactref element="LED10" pad="3"/>
+<contactref element="LED9" pad="3"/>
+<contactref element="GND" pad="1"/>
+<polygon width="0.1524" layer="16">
+<vertex x="2.7686" y="8.9662"/>
+<vertex x="118.7704" y="8.9662"/>
+<vertex x="118.7704" y="0.4572"/>
+<vertex x="2.7686" y="0.4572"/>
+</polygon>
+</signal>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
+</eagle>
