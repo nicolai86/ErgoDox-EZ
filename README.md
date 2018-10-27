@@ -1,6 +1,7 @@
 # ErgoDox-EZ
 
-[ErgoDox EZ](https://ergodox-ez.com/) LED mod to convert your regular ErgoDox EZ into an ErgoDox EZ shine. 
+[ErgoDox EZ](https://ergodox-ez.com/) LED mod to convert your regular ErgoDox EZ into an ErgoDox EZ shine.  
+The total cost for this mod is about about 40 CAD (~30 CAD for PCBs, ~10 CAD for components)
 
 ## Instructions
 
