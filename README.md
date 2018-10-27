@@ -30,6 +30,19 @@ You will need to LED pcbs to build this mod. The LED strips are identical for bo
 
 The gerber files, eagle project schematics and board files are included in the led-strip folder.
 
+### Assembly
+
+The LED strip assembly needs to be done twice, once for each half. For each side:
+
+1. Solder all 15 RGBW SK6812 LEDs 
+2. Solder the cables according to the marks
+
+![image|666x500](led-strip.jpeg)
+
+
+For the right hand you can solder the cables to the keyboard, or use a 3-pin micro JST connector instead.
+The left hand needs to be connected to an I2C bridge:
+
 ## I2C bridge
 
 ### List of materials
@@ -42,9 +55,19 @@ The gerber files, eagle project schematics and board files are included in the l
 | 0805 10K resistor | 3     | |
 | CSM-7X-DU 16Mhz oscillator | 1     | |
 | 6 pin AVR ISP connector | 1     | |
+| 4-pin micro JST connector | 1 | left hand connector to main PCB |
 
 The gerber files, eagle project schematics and board files are included in the i2c-bride folder.
 
 ## Assembly
 
-TODO instructions and pictures
+1. Solder the Atmega168p. Make sure to align the dark circle with the PCB properly. I've used SMD solder paste to place a film over all pins, solder one pin at a time.
+2. Solder the 2 22pF caps, C3 and C2.
+3. Solder the oscillator. 
+4. Solder the 10uF cap.
+5. Solder the 3 10k res.
+6. Solder the jack. Note that you'll need to desolder it after flashing, or cut them off.
+
+The left hand will look like this after soldering:
+
+![image|666x500](i2c-bridge.jpeg)
