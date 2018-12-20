@@ -72,3 +72,5 @@ The gerber files, eagle project schematics and board files are included in the i
 The left hand will look like this after soldering:
 
 ![image|666x500](i2c-bridge.jpeg)
+
+check out [KeebTalk](https://www.keebtalk.com/t/did-anybody-try-to-mod-their-ergodox-ez-with-a-custom-led-array/2286) for more images.
